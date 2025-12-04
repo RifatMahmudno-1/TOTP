@@ -13,15 +13,15 @@ A lightweight, dependency-free TypeScript implementation of Time-based One-Time 
 
 ## 📋 Table of Contents
 
-- [Installation](#installation)
-- [Quick Start](#quick-start)
-- [API Reference](#api-reference)
-- [Usage Examples](#usage-examples)
-- [How It Works](#how-it-works)
-- [Development](#development)
-- [Security](#security)
-- [Contributing](#contributing)
-- [License](#license)
+- [Installation](#-installation)
+- [Quick Start](#-quick-start)
+- [Usage Examples](#-usage-examples)
+- [API Reference](#-api-reference)
+- [How It Works](#-how-it-works)
+- [Development](#️-development)
+- [Security](#-security)
+- [Contributing](#-contributing)
+- [License](#-license)
 
 ## 🚀 Installation
 
