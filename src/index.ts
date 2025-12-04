@@ -28,7 +28,7 @@ function stringToBase32(text: string) {
 }
 
 function base32Decode(base32: string) {
-	const base32Lookup = { 'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4, 'F': 5, 'G': 6, 'H': 7, 'I': 8, 'J': 9, 'K': 10, 'L': 11, 'M': 12, 'N': 13, 'O': 14, 'P': 15, 'Q': 16, 'R': 17, 'S': 18, 'T': 19, 'U': 20, 'V': 21, 'W': 22, 'X': 23, 'Y': 24, 'Z': 25, '2': 26, '3': 27, '4': 28, '5': 29, '6': 30, '7': 31 }
+	const base32Lookup: { [key: string]: number } = { 'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4, 'F': 5, 'G': 6, 'H': 7, 'I': 8, 'J': 9, 'K': 10, 'L': 11, 'M': 12, 'N': 13, 'O': 14, 'P': 15, 'Q': 16, 'R': 17, 'S': 18, 'T': 19, 'U': 20, 'V': 21, 'W': 22, 'X': 23, 'Y': 24, 'Z': 25, '2': 26, '3': 27, '4': 28, '5': 29, '6': 30, '7': 31 }
 	let bits = ''
 	const output: number[] = []
 
@@ -58,7 +58,7 @@ function base32Decode(base32: string) {
 	return new Uint8Array(output)
 }
 
-async function generateHMAC(key: Uint8Array, counter: number) {
+async function generateHMAC(key: BufferSource, counter: number) {
 	const counterArray = new Uint8Array(8)
 
 	for (let i = 7; i >= 0; i--) {
